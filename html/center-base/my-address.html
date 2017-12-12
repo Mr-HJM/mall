@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>收货地址</title>
+    <meta name="renderer" content="webkit">
+    <link type="text/css" rel="stylesheet" href="../../bundle/css/my-address.css">
+</head>
+<body>
+    <!-- 公共头部 -->
+    <div class="top" id="header"></div>
+
+    <div class="wrap">
+        <div class="wrapC clearfix">
+            <div class="order-nav fl">
+                <div class="order-center">订单中心</div>
+                <ul class="order-ul">
+                    <li class="my-order">我的订单</li>
+                    <li>评价晒单</li>
+                    <li>我的常购商品</li>
+                    <li>购物助手</li>
+                </ul>
+                <div class="order-center follow">设置</div>
+                <ul class="order-ul">
+                    <li class="harvest-address">收货地址</li>
+                </ul>
+            </div>
+            <div class="order-detail fl">
+                <div class="detail-nav clearfix">
+                    <div class="mt">
+                        <a class="add-btn" href="javascript:;">新增收货地址</a>
+                        <span class="ftx-03">您已创建<span class="ftx-02 address-num"> </span>个收货地址
+                    </div>
+                    <div class="mc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 -->
+    <div class="bottom" id="footer"></div>
+
+    <div class="pop-mask"></div>
+    <div class="pop-address">
+        <div class="thickwrap">
+            <div class="thicktitle">
+                <span class="addAdd">添加收货地址</span>
+                <span class="updateAdd hide">修改收货地址</span>
+            </div>
+            <div class="thickcon">
+                <div id="addressDiagDiv">
+                    <div class="m" id="edit-cont">
+                        <div class="cm">
+                            <div class="form">
+                                <div class="item receiver clearfix">
+                                    <span class="label"><em>*</em>收货人：</span>
+                                    <div class="fl">
+                                        <input type="text" class="text receiver-name">
+                                        <span class="error-msg hide">请您填写收货人姓名</span>
+                                    </div>
+                                </div>
+                                <div class="item content clearfix">
+                                    <span class="label"><em>*</em>详细地址：</span>
+                                    <div class="fl">
+                                        <input type="text" class="text text1 content-detail">
+                                    </div>
+                                    <span class="error-msg hide">请您填写收货人详细地址</span>
+                                </div>
+                                <div class="item phone clearfix">
+                                    <div class="fl">
+                                        <span class="label"><em>*</em>手机号码：</span>
+                                        <input type="text" maxlength="11" class="text telphone">
+                                    </div>
+                                    <div class="fl"><span class="extra-span ftx-03">或</span></div>
+                                    <div class="fl">
+                                        <span class="label">固定电话：</span>
+                                        <input type="text" class="text telephone">
+                                        <span class="error-msg hide">请您填写收货人手机号码</span>
+                                    </div>
+                                </div>
+                                <div class="item email clearfix">
+                                    <span class="label">邮箱：</span>
+                                    <div class="fl">
+                                        <input type="text" class="text text1 email-detail" maxlength="50">
+                                        <span class="error-msg hide"></span>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <a href="javascript:;" class="e-btn btn-9 save-btn">保存收货地址</a>
+                                    <a href="javascript:;" class="e-btn btn-9 update-btn hide">修改收货地址</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="thickclose" id="">×</a>
+        </div>
+    </div>
+    <div class="pop-del">
+        <div class="thickwrap">
+            <div class="thicktitle">
+                <span>删除</span>
+            </div>
+            <div class="thickcon">
+                <div class="m flexbox">
+                    <div class="bm">
+                        <div class="tip-box icon-box">
+                            <span class="warn-icon m-icon"></span>
+                            <div class="item-fore">
+                                <h3 class="ftx04">您确定要删除该收货地址吗？</h3>
+                                <div class="op-btns">
+                                    <a href="javascript:void(0);" class="btn-9 sure">确定</a>
+                                    <a href="javascript:void(0);" class="btn-9 ml10 cancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="thickclose" id="">×</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+<script type="text/javascript" src="../../bundle/js/my-address.js"></script>
+</html>

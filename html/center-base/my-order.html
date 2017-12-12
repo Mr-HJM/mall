@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="renderer" content="webkit">
+    <link type="text/css" rel="stylesheet" href="../../bundle/css/my-order.css">
+</head>
+<body>
+    <!-- 公共头部 -->
+    <div class="top" id="header"></div>
+
+    <div class="wrap">
+        <div class="wrapC clearfix">
+            <div class="order-nav fl">
+                <div class="order-center">订单中心</div>
+                <ul class="order-ul">
+                    <li class="my-order">我的订单</li>
+                    <li>评价晒单</li>
+                    <li>我的常购商品</li>
+                    <li>购物助手</li>
+                </ul>
+                <div class="order-center follow">设置</div>
+                <ul class="order-ul">
+                    <li class="harvest-address">收货地址</li>
+                </ul>
+            </div>
+            <div class="order-detail fr">
+                <div class="detail-nav clearfix">
+                    <ul class="nav-ul fl">
+                        <li data-status="" class="active">全部订单</li>
+                        <li data-status="0">待付款</li>
+                        <li data-status="1">待收货</li>
+                        <li class="pingjia" data-remarkStatus="0">待评价</li>
+                    </ul>
+                    <div class="search-good fr">
+                        <input type="text" class="search-name fl" placeholder="商品名称/商品编号/订单号">
+                        <span class="search-btn fr"></span>
+                    </div>
+                </div>
+                <table class="detail-list"></table>
+                <div id="page"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 -->
+    <div class="bottom" id="footer"></div>
+
+    <div class="pop-mask"></div>
+    <div class="pop-del">
+        <div class="thickwrap">
+            <div class="thicktitle">
+                <span>删除</span>
+            </div>
+            <div class="thickcon">
+                <div class="m flexbox">
+                    <div class="bm">
+                        <div class="tip-box icon-box">
+                            <span class="warn-icon m-icon"></span>
+                            <div class="item-fore">
+                                <h3 class="ftx04">您确定要取消该订单吗？</h3>
+                                <div class="op-btns">
+                                    <a href="javascript:void(0);" class="btn-9 sure">确定</a>
+                                    <a href="javascript:void(0);" class="btn-9 ml10 cancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="thickclose" id="">×</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+<script type="text/javascript" src="../../bundle/js/my-order.js"></script>
+</html>

@@ -1,0 +1,264 @@
+@import './common/base.less';
+@import './common/center.less';
+@import './common/no-data';
+
+.wrap{
+	width: 100%;
+	background: #ffffff;
+	height: auto;
+}
+.wrapC{
+	width: 1200px;
+	margin: 0 auto 40px;
+	.logo-search{
+		margin-top: 23px;
+		.cart-title{
+			color: #333333;
+			font-size: 20px;
+			margin-left: 40px;
+			margin-top: 24px;
+		}
+		.search{
+			.search-bor{
+				width: 360px;
+				height: 34px;
+				border: 2px solid #de362b;
+				margin-top: 7px;
+				.search-name{
+					display: inline-block;
+					width: 268px;
+					height: 30px;
+					padding-left: 10px;
+				}
+				.search-btn{
+					display: inline-block;
+					width: 88px;
+					height: 30px;
+					background-color: #de362b;
+					color: #fff;
+					text-align: center;
+					line-height: 30px;
+					letter-spacing: 5px;
+					font-size: 14px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.cart-wrap{
+		margin-top: 36px;
+		.all-goods{
+			font-size: 20px;
+			color: #333333;
+			span{
+				font-size: 16px;
+				color: #e60012;
+			}
+		}
+		table{
+			width: 100%;
+			margin-top: 9px;
+			thead{
+				tr{
+					width: 1200px;
+					height: 42px;
+					background-color: #eeeeee;
+					th{
+						color: #333333;
+						font-size: 14px;
+						font-weight: normal;
+					}
+					.check-box{
+						width: 70px;
+						text-align: left;
+						padding-left: 20px;
+						cursor: pointer;
+						input{
+							margin-top: 4px;
+							cursor: pointer;
+						}
+						span{
+							margin-left: 8px;
+						}
+					}
+				}
+			}
+			tbody{
+				tr{
+					&.check-ed{
+						background-color: #fff4e8;
+					}
+					border-bottom: 1px dashed #e5e5e5;
+					td{
+						color: #666666;
+						font-size: 14px;
+						text-align: center;
+						height: 126px;
+					}
+					.goodstitle{
+						text-align: left;
+						padding-left: 10px;
+					}
+					.goods-num{
+						margin: 0 auto;
+						width: 92px;
+						height: 23px;
+						border: 1px solid #cccccc;
+						position: relative;
+						.reduceNum{
+							width: 19px;
+							height: 21px;
+							border-right: 1px solid #ccc;
+						}
+						.details-number{
+							width: 50px;
+							height: 20px;
+							text-align: center;
+						}
+						.addNum{
+							width: 19px;
+							height: 21px;
+							border-left: 1px solid #ccc;
+						}
+						.error{
+							display: none;
+							margin-top: 4px;
+							color: #f23d13;
+							font-size: 12px;
+							position: absolute;
+							left: -33px;
+							top: 23px;
+							width: 168px;
+						}
+					}
+					.box-check{
+						width: 70px;
+						text-align: left;
+						padding-left: 20px;
+						input{
+							cursor: pointer;
+						}
+					}
+					.goodstitle{
+						width: 446px;
+					}
+					.goods-item{
+						img{
+							width: 99px;
+							height: 100px;
+						}
+						.goodsname{
+							width: 320px;
+							margin-left: 14px;
+							margin-top: 12px;
+						}
+					}
+					.operation{
+						span{
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.settlement{
+			width: 100%;
+			height: auto;
+			margin-top: 32px;
+			.balance{
+				width: 460px;
+				height: 50px;
+				border: 1px solid #e5e5e5;
+				.already-selected{
+					color: #666666;
+					line-height: 48px;
+					margin-left: 20px;
+					font-size: 14px;
+					span{
+						color: #e60012;
+						font-weight: bold;
+					}
+				}
+				.total{
+					color: #666666;
+					line-height: 48px;
+					margin-left: 30px;
+					font-size: 14px;
+					span{
+						color: #e60012;
+						font-weight: bold;
+						//font-size: 16px;
+					}
+				}
+				.balance-btn{
+					width: 139px;
+					height: 48px;
+					background-color: #de362b;
+					color: #fff;
+					line-height: 48px;
+					text-align: center;
+					font-size: 18px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+.choice-goods{
+	width: 100%;
+	height: 300px;
+	background-color: #f6f6f6;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	.choice-hot{
+		width: 1200px;
+		margin: 0 auto;
+		.choice-logo{
+			width: 38px;
+			height: 99px;
+			background: #fff url(../../bundle/img/icon-xin.png) no-repeat center 6px;
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+			padding: 24px 13px;
+			color: #666666;
+			font-size: 14px;
+			line-height: 14px;
+		}
+		.choice-list{
+			margin-left: 40px;
+			margin-top: 20px;
+			.list-choice{
+				width: 180px;
+				margin-right: 44px;
+				img{
+					width: 180px;
+					height: 180px;
+				}
+				.list-name{
+					color: #666666;
+					font-size: 14px;
+					margin-top: 4px;
+					overflow:hidden;
+					text-overflow:ellipsis;
+					display:-webkit-box;
+					-webkit-box-orient:vertical;
+					-webkit-line-clamp:2;
+				}
+				.list-cont{
+					margin-top: 12px;
+					.list-money{
+						color: #e60012;
+						font-size: 14px;
+					}
+					.list-num{
+						color: #666666;
+						b{
+							font-weight: normal;
+							color: #3d58bd;
+						}
+					}
+				}
+			}
+		}
+	}
+}

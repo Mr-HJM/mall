@@ -1,0 +1,86 @@
+@import './common/base.less';
+@import './common/top.less';
+@import './common/center.less';
+@import './common/no-data';
+
+.top{
+	height: 102px;
+	border-color: #fff;
+	.topCon{
+		.top-logo{
+			margin-top: 0px;
+			padding-top: 19px;
+		}
+		.welcomeLogin{
+			color: #333333;
+			font-size: 20px;
+			line-height: 68px;
+			margin-left: 38px;
+		}
+		.already{
+			color: #333;
+			font-size: 12px;
+			margin-top: 30px;
+			margin-left: 38px;
+			li{
+				float: left;
+				padding: 0 25px;
+				border-left: 2px solid #eaeaea;
+			}
+		}
+	}
+}
+.wrap{
+	width: 100%;
+	background: #f6f6f6;
+	height: auto;
+	padding: 20px 0;
+}
+.wrapC{
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff url(../../bundle/img/pay-banner.png) no-repeat right;
+	padding-top: 53px;
+	.pay-success{
+		p{
+			text-align: center;
+		}
+		div{
+			margin-top: 10px;
+			text-align: center;
+			span{
+				margin-top: 10px;
+				color: #6eb242;
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+	}
+	.order-detail{
+		margin-left: 40px;
+		.order-num,.order-money{
+			font-size: 12px;
+			color: #333;
+			margin-bottom: 24px;
+		}
+		.order-list{
+			li{
+				&:first-child{
+					padding-left: 0px;
+				}
+				&:last-child{
+					border-right: 0;
+				}
+				float: left;
+				color: #3d58bd;
+				padding: 0 13px;
+				border-right: 2px solid #c6c6c6;
+			}
+		}
+		.pay-warn{
+			color: #999999;
+			margin-top: 40px;
+			margin-bottom: 16px;
+		}
+	}
+}

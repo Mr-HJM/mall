@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>所有物品</title>
+    <meta name="renderer" content="webkit">
+    <link type="text/css" rel="stylesheet" href="../../bundle/css/commodity-list.css">
+</head>
+<body>
+    <!-- 公共头部 -->
+    <div class="top" id="header"></div>
+
+    <div class="wrap">
+        <div class="hot-recommend clearfix">
+            <div class="hot-logo fl"><p>热销推荐</p></div>
+            <div class="hot-list fl"></div>
+        </div>
+        <div class="wrapC">
+            <div class="goods">
+                <div class="type-list clearfix">
+                    <div class="type-name fl">分类名称：</div>
+                    <ul class="fl"></ul>
+                </div>
+                <div class="commodity clearfix">
+                    <div class="commodity-left fl"></div>
+                    <div class="commodity-right fl">
+                        <div class="commodity-right-nav clearfix">
+                            <p class="right-nav-default fl active" data-category="">默认</p>
+                            <p class="right-nav-sales fl" data-category="salenum">销量</p>
+                            <p class="right-nav-money fl" data-category="price">价格</p>
+                            <p class="right-nav-comment fl" data-category="remarkNum">评论数</p>
+                        </div>
+                        <div class="commodity-right-list clearfix"></div>
+                        <div id="page"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choice-goods">
+            <div class="choice-hot clearfix">
+                <div class="choice-logo fl">精选商品</div>
+                <div class="choice-list fl clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 -->
+    <div class="bottom" id="footer"></div>
+
+</body>
+<script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+<script type="text/javascript" src="../../bundle/js/commodity-list.js"></script>
+</html>

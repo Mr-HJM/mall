@@ -1,0 +1,138 @@
+@import './common/base.less';
+@import './common/top.less';
+@import './common/no-data';
+@import './common/message.less';
+
+.top{
+	height: 102px;
+	.topCon{
+		.top-logo{
+			margin-top: 0px;
+			padding-top: 19px;
+		}
+		.welcomeLogin{
+			color: #333333;
+			font-size: 20px;
+			line-height: 68px;
+			margin-left: 38px;
+		}
+		.already{
+			color: #999;
+			font-size: 16px;
+			line-height: 80px;
+			margin-left: 38px;
+			span{
+				color: #333;
+				&:hover{
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+.wrap{
+	width: 100%;
+	// background: url(../../bundle/img/loging-bask.png) no-repeat center center;
+	height: 478px;
+	.login{
+		width: 1200px;
+		margin: 0 auto;
+		.pop-login{
+			width: 350px;
+			height: 362px;
+			background-color: #fff;
+			margin-top: 58px;
+			margin-left: 200px;
+			.loging-top{
+				height: 60px;
+				width: 350px;
+				background-color: #e02b2e;
+				color: #fff;
+				line-height: 60px;
+				font-size: 20px;
+				text-indent: 25px;
+			}
+			.login-detail{
+				margin-top: 34px;
+				margin-left: 25px;
+				margin-right: 25px;
+				position: relative;
+				.user-name{
+					width: 400px;
+					height: 42px;
+					border: 1px solid #d3d3d3;
+					background: url(../../bundle/img/icon-user.png) no-repeat 10px 10px;
+					padding-left: 36px;
+				}
+				.user-pass,.user_pass{
+					width: 400px;
+					height: 42px;
+					border: 1px solid #d3d3d3;
+					background: url(../../bundle/img/icon-pass.png) no-repeat 10px 10px;
+					padding-left: 36px;
+					margin-top: 27px;
+				}
+				.user-phone{
+					width: 400px;
+					height: 42px;
+					border: 1px solid #d3d3d3;
+					background: url(../../bundle/img/icon-phone.png) no-repeat 10px 10px;
+					padding-left: 36px;
+					margin-top: 27px;
+				}
+				.login-btn{
+					width: 400px;
+					height: 42px;
+					border: 1px solid #d3d3d3;
+					background: #e02b2e;
+					color: #fff;
+					margin-top: 27px;
+					letter-spacing: 12px;
+					font-size: 18px;
+					cursor: pointer;
+				}
+				.sub-btn{
+					margin-top: 16px;
+					.forget{
+						color: #999999;
+						font-size: 14px;
+						cursor: pointer;
+					}
+					.register{
+						width: 78px;
+						text-align: right;
+						color: #d5595b;
+						font-size: 14px;
+						background: url(../../bundle/img/icon-register.png) no-repeat left;
+						cursor: pointer;
+					}
+				}
+				.error{
+					color: #e02b2e;
+					display: none;
+				}
+				.username{
+					position: absolute;
+					left: 0px;
+					top: 41px;
+				}
+				.userpass{
+					position: absolute;
+					left: 0px;
+					top: 110px;
+				}
+				.userPass{
+					position: absolute;
+					left: 0px;
+					top: 180px;
+				}
+				.userPhone{
+					position: absolute;
+					left: 0px;
+					top: 250px;
+				}
+			}
+		}
+	}
+}

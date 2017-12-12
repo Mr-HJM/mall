@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="renderer" content="webkit">
+    <link type="text/css" rel="stylesheet" href="../../bundle/css/my-cart.css">
+</head>
+<body>
+    <!-- 公共头部 -->
+    <div class="top" id="header"></div>
+
+    <div class="wrap">
+        <div class="wrapC clearfix">
+            <div class="logo-search clearfix">
+                <div class="logo fl clearfix">
+                    <img src="../../bundle/img/logo.png" class="fl">
+                    <span class="cart-title fl">购物车</span>
+                </div>
+                <div class="search fr">
+                    <div class="search-bor clearfix">
+                        <input type="text" class="search-name fl">
+                        <span class="search-btn fr">搜索</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-wrap">
+                <div class="all-goods">全部商品 <span>0</span></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="check-box">
+                                <input type="checkbox" name="toggle-checkboxes" class="jdcheckbox fl">
+                                <span class="all-check fl">全选</span>
+                            </th>
+                            <th class="goods-title">商品</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                            <th>小计</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="settlement clearfix">
+                    <div class="balance fr clearfix">
+                        <p class="already-selected fl">已选择<span>0</span>件商品</p>
+                        <p class="total fl">总价：<span>￥0.00</span></p>
+                        <p class="balance-btn fr">去结算</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choice-goods">
+            <div class="choice-hot clearfix">
+                <div class="choice-logo fl">猜你喜欢</div>
+                <div class="choice-list fl clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公共尾部 -->
+    <div class="bottom" id="footer"></div>
+</body>
+<script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+<script type="text/javascript" src="../../bundle/js/my-cart.js"></script>
+</html>

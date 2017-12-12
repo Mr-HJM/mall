@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>物品详情</title>
+    <meta name="renderer" content="webkit">
+    <link type="text/css" rel="stylesheet" href="../../bundle/css/commodity-detail.css">
+</head>
+<body>
+    <!-- 公共头部 -->
+    <div class="top" id="header"></div>
+
+    <div class="wrap">
+        <div class="hot-recommend clearfix">
+            <div class="hot-logo fl"><p>热销推荐</p></div>
+            <div class="hot-list clearfix fl"></div>
+        </div>
+        <div class="wrapC">
+            <div class="goods-detail">
+                <div class="nav"><b></b></div>
+                <div class="details clearfix">
+                    <div id="preview" class="jxwpDT-img fl">
+                        <div class="jxwpDT-dImg small-box">
+                            <ul id="small_img" class="wrapper clearfix"></ul>
+                        </div>
+                        <div class="jxwpDT-list thumbnail-box">
+                            <span class="jxwpBtn btn-prev fl"><img src="../../bundle/img/icon-jtL.png"></span>
+                            <div class="jxwpDT-list-con fl">
+                                <ul class="small-img wrapper"></ul>
+                            </div>
+                            <span class="jxwpBtn btn-next fr"><img src="../../bundle/img/icon-jtR.png"></span>
+                        </div>
+                    </div>
+                    <div class="details-list fl">
+                        <div class="details-name"></div>
+                        <div class="details-back clearfix">
+                            <div class="details-money fl">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<b></b></div>
+                        </div>
+                        <div class="details-brand">品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：<b></b></div>
+                        <div class="details-type">类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：<b></b></div>
+                        <div class="details-standard">规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<b></b></div>
+                        <div class="details-stock">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：<b></b></div>
+                        <div class="details-num clearfix">
+                            <div class="nums fl">
+                                <a href="javascript:void(0);" class="reduceNum fl">-</a>
+                                <input type="text" class="details-number fl" maxLength="4" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                <input type="hidden" class="stock-num" value="">
+                                <a href="javascript:void(0);" class="addNum fr">+</a>
+                            </div>
+                            <div class="buy-now fl">立即购买</div>
+                        </div>
+                        <div class="error-num">您所填写的宝贝数量超过库存！</div>
+                    </div>
+                    <div class="see-again fr">
+                        <div class="again-title">看了又看</div>
+                        <div class="again-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-introduce clearfix">
+                <div class="hot-winking fl">
+                    <div class="winking-hot">
+                        <div class="hot-title">热销排行榜</div>
+                        <ul class="hotList clearfix"></ul>
+                    </div>
+                    <div class="again-hot">
+                        <div class="hot-again">购买该商品的用户还浏览了</div>
+                        <ul class="again-list">
+                            <li>
+                                <img src="../../bundle/img/listimg7.png">
+                                <div>
+                                    <span>进口北欧芬兰松全实木书台架书桌+书架</span>
+                                    <b>￥ 119.00</b>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../../bundle/img/listimg7.png">
+                                <div>
+                                    <span>进口北欧芬兰松全实木书台架书桌+书架</span>
+                                    <b>￥ 119.00</b>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../../bundle/img/listimg7.png">
+                                <div>
+                                    <span>进口北欧芬兰松全实木书台架书桌+书架</span>
+                                    <b>￥ 119.00</b>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../../bundle/img/listimg7.png">
+                                <div>
+                                    <span>进口北欧芬兰松全实木书台架书桌+书架</span>
+                                    <b>￥ 119.00</b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ware-detail fl">
+                    <ul class="ware-nav clearfix">
+                        <li class="active">商品介绍</li>
+                        <li>售后保障</li>
+                        <li>商品评价</li>
+                        <div class="add-cart fr">加入购物车</div>
+                    </ul>
+                    <div class="ware-introduce">
+                        <!-- 商品介绍 -->
+                        <div class="ware_brand">
+                            <ul class="nav-ware clearfix">
+                                <li class="ware-brand">品牌：<b></b></li>
+                                <li class="goodsname">商品名称：<b></b></li>
+                                <li class="goodsnum">商品编号：<b></b></li>
+                                <li class="goodstype">类型：<b></b></li>
+                                <li class="goodsstandard">规格：<b></b></li>
+                            </ul>
+                            <div class="goodsdatails"></div>
+                        </div>
+                        <!-- 售后保障 -->
+                        <div class="sales-guarantee"></div>
+                        <!-- 商品评价 -->
+                        <div class="commodity-eval"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choice-goods">
+            <div class="choice-hot clearfix">
+                <div class="choice-logo fl">猜你喜欢</div>
+                <div class="choice-list fl clearfix"></div>
+            </div>
+        </div>
+        <div class="pop"></div>
+        <div class="pop-loging"></div>
+    </div>
+
+    <!-- 公共尾部 -->
+    <div class="bottom" id="footer"></div>
+
+</body>
+<script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+<script type="text/javascript" src="../../bundle/js/jquery.SuperSlide.min.js"></script>
+<script type="text/javascript" src="../../bundle/js/commodity-detail.js"></script>
+</html>
