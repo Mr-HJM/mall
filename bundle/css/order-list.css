@@ -548,6 +548,7 @@ textarea::-webkit-input-placeholder {
   font-weight: 700;
   margin-left: 40px;
   cursor: pointer;
+  position: relative;
 }
 #center .center-user .set .set-sel {
   display: inline-block;
@@ -556,6 +557,27 @@ textarea::-webkit-input-placeholder {
   background: url(../../bundle/img/icon-center-sel.png) no-repeat 0px 2px;
   margin-left: 8px;
   line-height: 80px;
+}
+#center .center-user .set ul {
+  display: none;
+  position: absolute;
+  width: 75px;
+  background: #fff;
+  left: 0px;
+  top: 60px;
+}
+#center .center-user .set ul li {
+  width: 75px;
+  height: 30px;
+  text-indent: 10px;
+  line-height: 30px;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+}
+#center .center-user .set ul li:hover {
+  background: #f5f5f5;
+  color: #e4393c;
 }
 #center .center-user .shopping-car {
   width: 154px;

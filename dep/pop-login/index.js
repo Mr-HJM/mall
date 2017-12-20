@@ -50,7 +50,10 @@ var popLogin = {
 		var me = this;
 		$('.pop-login .login-details span').on('click', function(){
 			$('.pop,.pop-loging').hide();
-		})
+		});
+		$('.register').on('click', function(){
+			location.href = '../integral-base/register.html';
+		});
 	}
 }
 

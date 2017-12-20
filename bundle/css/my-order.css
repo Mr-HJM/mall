@@ -548,6 +548,7 @@ textarea::-webkit-input-placeholder {
   font-weight: 700;
   margin-left: 40px;
   cursor: pointer;
+  position: relative;
 }
 #center .center-user .set .set-sel {
   display: inline-block;
@@ -556,6 +557,27 @@ textarea::-webkit-input-placeholder {
   background: url(../../bundle/img/icon-center-sel.png) no-repeat 0px 2px;
   margin-left: 8px;
   line-height: 80px;
+}
+#center .center-user .set ul {
+  display: none;
+  position: absolute;
+  width: 75px;
+  background: #fff;
+  left: 0px;
+  top: 60px;
+}
+#center .center-user .set ul li {
+  width: 75px;
+  height: 30px;
+  text-indent: 10px;
+  line-height: 30px;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+}
+#center .center-user .set ul li:hover {
+  background: #f5f5f5;
+  color: #e4393c;
 }
 #center .center-user .shopping-car {
   width: 154px;
@@ -788,6 +810,19 @@ textarea::-webkit-input-placeholder {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.wrapC .order-detail .detail-list tbody tr.hd-tr td:nth-child(5),
+.wrapC .order-detail .detail-list tbody tr.hd-tr td:nth-child(2),
+.wrapC .order-detail .detail-list tbody tr.hd-tr td:nth-child(3),
+.wrapC .order-detail .detail-list tbody tr.hd-tr td:nth-child(4) {
+  display: none;
+}
+.wrapC .order-detail .detail-list tbody tr.tr-hd0 td:nth-child(5),
+.wrapC .order-detail .detail-list tbody tr.tr-hd0 td:nth-child(2),
+.wrapC .order-detail .detail-list tbody tr.tr-hd0 td:nth-child(3),
+.wrapC .order-detail .detail-list tbody tr.tr-hd0 td:nth-child(4) {
+  display: table-cell;
+  vertical-align: inherit;
+}
 .wrapC .order-detail .detail-list tbody tr.tr-bd {
   text-align: center;
   vertical-align: top;
@@ -893,7 +928,8 @@ textarea::-webkit-input-placeholder {
 #page .page {
   text-align: right;
 }
-.pop-del {
+.pop-del,
+.pop-sh {
   width: 328px;
   height: 152px;
   display: none;
@@ -906,10 +942,12 @@ textarea::-webkit-input-placeholder {
   border-radius: 5px;
   background: #fff;
 }
-.pop-del .thickwrap {
+.pop-del .thickwrap,
+.pop-sh .thickwrap {
   width: 320px;
 }
-.pop-del .thickwrap .thicktitle {
+.pop-del .thickwrap .thicktitle,
+.pop-sh .thickwrap .thicktitle {
   height: 27px;
   padding: 0 10px;
   border: solid #C4C4C4;
@@ -921,7 +959,8 @@ textarea::-webkit-input-placeholder {
   font-weight: 700;
   color: #333;
 }
-.pop-del .thickwrap .thickcon {
+.pop-del .thickwrap .thickcon,
+.pop-sh .thickwrap .thickcon {
   background: #fff;
   border: solid #C4C4C4;
   border-width: 1px;
@@ -931,14 +970,17 @@ textarea::-webkit-input-placeholder {
   padding-left: 10px;
   padding-right: 10px;
 }
-.pop-del .thickwrap .thickcon .m {
+.pop-del .thickwrap .thickcon .m,
+.pop-sh .thickwrap .thickcon .m {
   margin-bottom: 10px;
 }
-.pop-del .thickwrap .thickcon .m .icon-box {
+.pop-del .thickwrap .thickcon .m .icon-box,
+.pop-sh .thickwrap .thickcon .m .icon-box {
   position: relative;
   margin: 0 40px;
 }
-.pop-del .thickwrap .thickcon .m .icon-box .m-icon {
+.pop-del .thickwrap .thickcon .m .icon-box .m-icon,
+.pop-sh .thickwrap .thickcon .m .icon-box .m-icon {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -948,22 +990,26 @@ textarea::-webkit-input-placeholder {
   background: url(../../bundle/img/del-icon.png) no-repeat;
   background-position: -94px 0;
 }
-.pop-del .thickwrap .thickcon .m .icon-box .item-fore {
+.pop-del .thickwrap .thickcon .m .icon-box .item-fore,
+.pop-sh .thickwrap .thickcon .m .icon-box .item-fore {
   margin-left: 58px;
 }
-.pop-del .thickwrap .thickcon .m .icon-box .item-fore h3 {
+.pop-del .thickwrap .thickcon .m .icon-box .item-fore h3,
+.pop-sh .thickwrap .thickcon .m .icon-box .item-fore h3 {
   font-family: "Microsoft YaHei";
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #ff6c00;
 }
-.pop-del .thickwrap .thickcon .m .icon-box .item-fore .op-btns {
+.pop-del .thickwrap .thickcon .m .icon-box .item-fore .op-btns,
+.pop-sh .thickwrap .thickcon .m .icon-box .item-fore .op-btns {
   line-height: 20px;
   min-height: 20px;
   margin-top: 15px;
 }
-.pop-del .thickwrap .thickcon .m .icon-box .item-fore .op-btns .btn-9 {
+.pop-del .thickwrap .thickcon .m .icon-box .item-fore .op-btns .btn-9,
+.pop-sh .thickwrap .thickcon .m .icon-box .item-fore .op-btns .btn-9 {
   color: #323333;
   background-color: #F7F7F7;
   background-image: linear-gradient(to bottom, #F7F7F7 0, #F3F2F2 100%);
@@ -974,7 +1020,8 @@ textarea::-webkit-input-placeholder {
   border: 1px solid #ddd;
   padding: 2px 14px 3px;
 }
-.pop-del .thickwrap .thickclose {
+.pop-del .thickwrap .thickclose,
+.pop-sh .thickwrap .thickclose {
   display: block;
   position: absolute;
   z-index: 100000;

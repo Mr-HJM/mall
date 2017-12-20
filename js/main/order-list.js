@@ -222,7 +222,7 @@ var order = {
                 }
             }).then(function(data){
                 if(data.status == 200){
-                    ajax({
+                    /*ajax({
                         url: '/eshop/pay/trade',
                         type: 'post',
                         dataType: 'html',
@@ -233,7 +233,10 @@ var order = {
                     }).then(function(json){
                         sessionStorage.setItem("pay",json);
                         location.href = '../order-settle/pay.html';
-                    });
+                    });*/
+                    sessionStorage.setItem("orderNum",data.result.orderId);
+                    sessionStorage.setItem("orderMoney",data.result.payMoney);
+                    location.href = '../order-settle/payment-choice.html';
                 }
             });
         })

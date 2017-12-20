@@ -155,6 +155,13 @@
 						    }
 					    }
 					}
+					&.hd-tr td:nth-child(5),&.hd-tr td:nth-child(2),&.hd-tr td:nth-child(3),&.hd-tr td:nth-child(4){
+						display: none;
+					}
+					&.tr-hd0 td:nth-child(5),&.tr-hd0 td:nth-child(2),&.tr-hd0 td:nth-child(3),&.tr-hd0 td:nth-child(4){
+						    display: table-cell;
+    						vertical-align: inherit;
+					}
 					&.tr-bd{
 						text-align: center;
     					vertical-align: top;
@@ -265,7 +272,7 @@
 #page .page{
 	text-align: right;
 }
-.pop-del{
+.pop-del,.pop-sh{
 	width: 328px;
 	height: 152px;
 	display: none;

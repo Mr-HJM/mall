@@ -35,7 +35,7 @@
         <div class="all-classify fl">全部商品分类</div>
         <ul class="nav-classify fl">
             {{each}}
-                <li data-id="{{$value.id}}">{{$value.name}}</li>
+                <li data-num="{{$value.number}}" data-id="{{$value.id}}">{{$value.name}}</li>
             {{/each}}
         </ul>
     </div>

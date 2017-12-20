@@ -29,7 +29,7 @@ module.exports = {
      * @returns {*}
      */
     getParams: function (key) {
-        var paramsStr = location.href.indexOf('#') > 0 ? location.href.substring(location.href.indexOf("#") + 1, location.href.length) : '';
+        var paramsStr = location.href.indexOf('?') > 0 ? location.href.substring(location.href.indexOf("?") + 1, location.href.length) : '';
         //获取所有的#即以前的？后面的值，相当于location.search
         var maps, paramsObj = {};
         if (paramsStr === '') {

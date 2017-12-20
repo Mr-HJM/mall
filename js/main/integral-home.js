@@ -84,7 +84,7 @@ var integral = {
                 $('.xiandai .immediately').on('click', function(){
                     //var thisId = $(this).attr('data-id');
                     var thisName = $(this).parents('.furniture-title').children('.title-furniture').html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName //+ '&parentId=' + thisId;
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&bnum=001'; //+ '&parentId=' + thisId;
                 })
             }
         });
@@ -103,7 +103,7 @@ var integral = {
                 $('.meishi .immediately').on('click', function(){
                     //var thisId = $(this).attr('data-id');
                     var thisName = $(this).parents('.furniture-title').children('.title-furniture').html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName //+ '&parentId=' + thisId;
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&bnum=002'; //+ '&parentId=' + thisId;
                 })
             }
         });
@@ -122,7 +122,7 @@ var integral = {
                 $('.oushi .immediately').on('click', function(){
                     //var thisId = $(this).attr('data-id');
                     var thisName = $(this).parents('.furniture-title').children('.title-furniture').html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName //+ '&parentId=' + thisId;
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&bnum=003'; //+ '&parentId=' + thisId;
                 })
             }
         });
@@ -141,7 +141,7 @@ var integral = {
                 $('.zhongshi .immediately').on('click', function(){
                     //var thisId = $(this).attr('data-id');
                     var thisName = $(this).parents('.furniture-title').children('.title-furniture').html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName //+ '&parentId=' + thisId;
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&bnum=005'; //+ '&parentId=' + thisId;
                 })
             }
         });
@@ -160,7 +160,7 @@ var integral = {
                 $('.hanshi .immediately').on('click', function(){
                     //var thisId = $(this).attr('data-id');
                     var thisName = $(this).parents('.furniture-title').children('.title-furniture').html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName //+ '&parentId=' + thisId;
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&bnum=006'; //+ '&parentId=' + thisId;
                 })
             }
         });
@@ -232,12 +232,14 @@ var integral = {
         $('body').on('click', '.furnitureUl>ul>li', function(){
             var thisName = $(this).html();
             var thisId = $(this).parent('ul').attr('data-id');
-            location.href = '../commodity-base/commodity-list.html#flag=' + thisName + '&parentId=' + thisId;
+            var bnum = $(this).parents('.furnitureUl').attr('data-num');
+            location.href = '../commodity-base/commodity-list.html#flag=' + thisName + '&parentId=' + thisId + '&bnum=' + bnum;
         });
         $('body').on('click', '.furnitureNav>li', function(){
             var thisName = $(this).html();
             var thisId = $(this).parent('ul').attr('data-id');
-            location.href = '../commodity-base/commodity-list.html#flag=' + thisName + '&parentId=' + thisId;
+            var bnum = $(this).parent('ul').attr('data-num');
+            location.href = '../commodity-base/commodity-list.html#flag=' + thisName + '&parentId=' + thisId + '&bnum=' + bnum;
         });
 
         $('body').on('click','.introduce>ul', function(){

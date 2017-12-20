@@ -67,7 +67,8 @@ var header = {
                 $('.nav-classify li').on('click', function(){
                     var thisId = $(this).attr('data-id');
                     var thisName = $(this).html();
-                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&parentId=' + thisId;
+                    var num = $(this).attr('data-num');
+                    location.href = '../commodity-base/commodity-list.html?flag=' + thisName + '&parentId=' + thisId + '&bnum=' + num;
                 });
             }
         });
@@ -92,6 +93,7 @@ var header = {
 
         if(loginStatus == 'yes'){
             $('.top .site-loged').hide();
+            $('.welcome').html('您好 '+getLoginname+'，欢迎光临御廷家居！');
         } else {
             $('body').on('click','.site-loging-success li', function(){
                 location.href = '../integral-base/login.html'

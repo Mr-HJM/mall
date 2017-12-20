@@ -32,6 +32,7 @@ var center = {
         var loginStatus = storage["islogin"];
         if(loginStatus == 'yes'){
             $('.loging-welcome').html('Hi,' + getLoginname);
+            $('.welcome').html('您好 '+getLoginname+'，欢迎光临御廷家居！');
         }
         _callBack(getLoginname);
     },
@@ -40,8 +41,11 @@ var center = {
         $('.home,.center-user img').on('click', function(){
             location.href = '../integral-base/integral-home.html';
         });
-        $('.harvest-address').on('click', function(){
+        $('.harvest-address,.sh-address').on('click', function(){
             location.href = '../center-base/my-address.html';
+        });
+        $('.user-info').on('click', function(){
+            location.href = '../center-base/user-info.html';
         });
         $('.my-order').on('click', function(){
             location.href = '../center-base/my-order.html';
@@ -49,6 +53,12 @@ var center = {
 
         $('.my-car,.shopping-car').on('click', function(){
             location.href = '../my-cart/my-cart.html';
+        });
+
+        $('.set').on('mouseenter', function(){
+            $(this).children('ul').show();
+        }).on('mouseleave', function(){
+            $(this).children('ul').hide();
         });
     },
 };

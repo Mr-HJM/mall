@@ -96,6 +96,15 @@ var order = {
                 $(this).parent('.goods-num').children('.error').hide();
                 $(this).parent('.goods-num').children('.error').removeClass('showError');
             }
+
+            if($(this).parents('tr').find('.list-check').prop("checked")){
+                var totalMoney = null;
+                $('tbody tr').each(function(){
+                    var oneMoney = $(this).find('.subtotal').html();
+                    totalMoney+=parseInt(oneMoney.substring(1,oneMoney.indexOf('.')))
+                })
+                $('.total span').html('￥'+totalMoney+'.00');
+            }
         });
         $('body').on('click', 'table tbody tr .addredu-num .addNum' ,function(){
             var numberSk = parseInt($(this).prev('.stock-num').val());

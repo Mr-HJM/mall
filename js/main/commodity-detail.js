@@ -79,6 +79,7 @@ var commodity = {
 				$('.small-img').html(imgList);
 				$('#small_img').html(img_list);
 
+				// $(".jqzoom").jqueryzoom({xzoom:380,yzoom:410});
 				$('#preview').banqh({
 					box:"#preview",//总框架
 					pic:".small-box",//大图框架

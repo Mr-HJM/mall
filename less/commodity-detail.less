@@ -263,13 +263,17 @@
 						display: block;
 						position: absolute;
 						left: 0px;
-						bottom: 0px;
-						background: rgba(255,255,255,.4);
+						bottom: -30px;
+						// background: rgba(255,255,255,.4);
 						width: 166px;
 						height: 30px;
 						line-height: 30px;
 						font-size: 14px;
-						text-indent: 10px;
+						text-align: center;
+						color: #e60012;
+						span{
+							color: #666;
+						}
 					}
 				}
 			}
@@ -309,7 +313,7 @@
 					}
 					div{
 						width: 142px;
-						span{
+						.val-name{
 							display: inline-block;
 							color: #666666;
 							font-size: 14px;
@@ -324,8 +328,14 @@
 							display: inline-block;
 							font-size: 14px;
 							color: #e60012;
-							margin-top: 10px;
+							margin-top: 5px;
 							font-weight: normal;
+						}
+						.sale-num{
+							display: block;
+							font-size: 14px;
+							color: #666;
+							margin-top: 5px;
 						}
 					}
 				}
@@ -405,7 +415,7 @@
 				}
 			}
 			.ware-introduce{
-				margin-left: 22px;
+				margin: 0 22px;
 				.ware_brand{
 					margin-top: 41px;
 					color: #666666;
@@ -498,6 +508,76 @@
 		}
 	}
 }
+.commodity-eval{
+	padding-top: 10px;
+	li{
+		border-bottom: 1px solid #ddd;
+		padding: 15px;
+		.user-column{
+			width: 140px;
+			.user-info{
+				white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    img{
+			    	width: 25px;
+			    	height: 25px;
+			    	border-radius: 50%;
+    				margin-right: 5px;
+			    }
+			}
+		}
+		.comment-column{
+			margin-left: 200px;
+			.comment-star{
+				font-size: 14px;
+			    line-height: 180%;
+			    color: #333;
+			}
+			.comment-con{
+				font-size: 14px;
+			    padding: 10px 0;
+			    line-height: 180%;
+			    color: #333;
+			}
+			.comment-message{
+				span{
+					color: #999;
+				}
+			}
+		}
+	}
+}
+.sales-guarantee{
+	padding: 10px;
+	.manufactor{
+    	span{
+    		font-weight: bold;
+    		font-size: 14px;
+    	}
+	}
+	.guanfang-www{
+		margin-top: 10px;
+		font-size: 14px;
+		color: #666;
+	}
+	.service-phone,.buy-address{
+		margin-top: 10px;
+		font-size: 14px;
+		color: #666;
+	}
+}
+
+
+
+
+
+
 .pop-loging{
 	display: none;
 }
+
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}

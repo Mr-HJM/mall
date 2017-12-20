@@ -1046,13 +1046,16 @@ textarea::-webkit-input-placeholder {
   display: block;
   position: absolute;
   left: 0px;
-  bottom: 0px;
-  background: rgba(255, 255, 255, 0.4);
+  bottom: -30px;
   width: 166px;
   height: 30px;
   line-height: 30px;
   font-size: 14px;
-  text-indent: 10px;
+  text-align: center;
+  color: #e60012;
+}
+.wrapC .goods-detail .details .see-again .again-list .see-money span {
+  color: #666;
 }
 .wrapC .goods-introduce {
   width: 1200px;
@@ -1093,7 +1096,7 @@ textarea::-webkit-input-placeholder {
 .wrapC .goods-introduce .hot-winking .hotList li div {
   width: 142px;
 }
-.wrapC .goods-introduce .hot-winking .hotList li div span {
+.wrapC .goods-introduce .hot-winking .hotList li div .val-name {
   display: inline-block;
   color: #666666;
   font-size: 14px;
@@ -1108,8 +1111,14 @@ textarea::-webkit-input-placeholder {
   display: inline-block;
   font-size: 14px;
   color: #e60012;
-  margin-top: 10px;
+  margin-top: 5px;
   font-weight: normal;
+}
+.wrapC .goods-introduce .hot-winking .hotList li div .sale-num {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
 }
 .wrapC .goods-introduce .hot-winking .again-hot {
   border: 1px solid #e5e5e5;
@@ -1186,7 +1195,7 @@ textarea::-webkit-input-placeholder {
   border: 1px solid #de362b;
 }
 .wrapC .goods-introduce .ware-detail .ware-introduce {
-  margin-left: 22px;
+  margin: 0 22px;
 }
 .wrapC .goods-introduce .ware-detail .ware-introduce .ware_brand {
   margin-top: 41px;
@@ -1276,8 +1285,102 @@ textarea::-webkit-input-placeholder {
   font-weight: normal;
   color: #3d58bd;
 }
+.commodity-eval {
+  padding-top: 10px;
+}
+.commodity-eval li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+.commodity-eval li .user-column {
+  width: 140px;
+}
+.commodity-eval li .user-column .user-info {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.commodity-eval li .user-column .user-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.commodity-eval li .comment-column {
+  margin-left: 200px;
+}
+.commodity-eval li .comment-column .comment-star {
+  font-size: 14px;
+  line-height: 180%;
+  color: #333;
+}
+.commodity-eval li .comment-column .comment-con {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 180%;
+  color: #333;
+}
+.commodity-eval li .comment-column .comment-message span {
+  color: #999;
+}
+.sales-guarantee {
+  padding: 10px;
+}
+.sales-guarantee .manufactor span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.sales-guarantee .guanfang-www {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.sales-guarantee .service-phone,
+.sales-guarantee .buy-address {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
 .pop-loging {
   display: none;
+}
+/*图片放大镜样式*/
+.jqzoom {
+  float: left;
+  border: none;
+  position: relative;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0px;
+  display: block;
+}
+.zoomdiv {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 350px;
+  background: #ffffff;
+  border: 1px solid #CCCCCC;
+  display: none;
+  text-align: center;
+  overflow: hidden;
+}
+.jqZoomPup {
+  z-index: 10;
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa;
+  background: #ffffff /*url(../images/zoom.png) 50% center no-repeat*/;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 /*# sourceMappingURL=maps/commodity-detail.css.map */

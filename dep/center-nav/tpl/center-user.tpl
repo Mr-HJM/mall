@@ -22,7 +22,12 @@
 	<div class="center-user clearfix">
 		<img src="../../bundle/img/center-logo.png" class="fl">
 		<div class="home fl">首页</div>
-		<div class="set fl">账户设置<i class="set-sel"></i></div>
+		<div class="set fl">账户设置<i class="set-sel"></i>
+            <ul>
+                <li class="user-info">个人信息</li>
+                <li class="sh-address">收货地址</li>
+            </ul>
+        </div>
 		<div class="shopping-car fr clearfix">
 			<img src="../../bundle/img/icon-shopping-car.png" class="fl">
 			<span class="fl">我的购物车</span>

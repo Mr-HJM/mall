@@ -4,6 +4,7 @@ var header = require('header-nav/header');
 var noData = require('no-data/no-data.js');
 var pager = require('page-break/page-break.js');
 var util = require('utilspare/util.js');
+var utils = require('util/utils.js');
 
 var commodityList = require('commodity-list/commodity-list');
 var choiceList = require('commodity-list/choice-list');
@@ -17,6 +18,7 @@ var commodity = {
     parentId: null,
     parentID: null,
 	pageNumber: '1',
+    bnum: null,
     orderField: '',
     orderDesc: 'asc',
     searchName: '',
@@ -25,9 +27,14 @@ var commodity = {
 		var me = this;
 		header.init(function(){});
         var urlSearch = window.location.search;
-        me.flaG = urlSearch.split('=')[1];
+        /*me.flaG = urlSearch.split('=')[1];
         me.parentID = urlSearch.split('=')[2];
+        me.bnum = urlSearch.split('=')[3];*/
+        me.flaG = utils.getParams('flag');
+        me.parentID = utils.getParams('parentId');
+        me.bnum = utils.getParams('bnum');
 
+        me.bnum = util.getParams('bnum');
         me.searchName = util.getParams('name');
         me.flag = util.getParams('flag');
         me.parentId = util.getParams('parentId');
@@ -51,6 +58,7 @@ var commodity = {
                 name: me.searchName,
                 orderField: me.orderField,
                 orderDesc: me.orderDesc,
+                bnum: me.bnum,
             	pageSize: '20',
             	curPageNumber: me.pageNumber
             }
